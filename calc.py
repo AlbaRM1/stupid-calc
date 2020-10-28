@@ -2,149 +2,6 @@ from colorama import init
 from colorama import Fore, Back, Style
 from math import factorial, fmod, frexp, log10, log2, sqrt, acos, asin, atan, hypot, degrees, cosh, sinh, tanh, acosh, asinh, atanh, pi   #конверт ралиан в градусы, обратный гиперболический косинус, обратный гиперболический синус, обратный гиперболический тангенс, число пи.
 init()
-def plus():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a + b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def minus():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a - b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def umnoj():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a * b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def delen():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a / b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def delen_modul():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a // b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def stepen():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a ** b))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def perimetr_p():
-    a = float(input("Первая сторона: "))
-    b = float(input("Вторая сторона: "))
-    print(Fore.GREEN + str(2*(a + b)) + Fore.RED +" СМ²")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def perimetr_t():
-    a = float(input("Первая сторона: "))
-    b = float(input("Вторая сторона: "))
-    c = float(input("Третья сторона: "))
-    print(Fore.GREEN + str(a + b + c) + Fore.RED +" СМ²")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def ploshad_p():
-    a = float(input("Первая сторона: "))
-    b = float(input("Вторая сторона: "))
-    print(Fore.GREEN + str(a * b) + Fore.RED +" СМ³")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def ploshad_k():
-    a = float(input("Первая сторона: "))
-    print(Fore.GREEN + str(a ** 2) + Fore.RED +" СМ³")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def ploshad_trop():
-    a = float(input("Первая сторона: "))
-    b = float(input("Вторая сторона: "))
-    h = float(input("Высота тропеции: "))
-    print(Fore.GREEN + str(0.5 * h * (a + b)) + Fore.RED +" СМ³")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-
-
-def fact():
-    a = int(input("Первое значение: "))
-    b = factorial(a)
-    c = int(b)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def fm():
-    a = float(input("Первое значение: "))
-    b = float(input("Второе значение: "))
-    c = fmod(a, b)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def xp():
-    a = float(input("Первое значение: "))
-    c = frexp(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def lg10():
-    a = float(input("Первое значение: "))
-    c = log10(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def lg2():
-    a = float(input("Первое значение: "))
-    c = log2(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def koren():
-    a = float(input("Первое значение: "))
-    c = sqrt(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-
-''' ------ '''
-def af():
-    a = float(input("Первое значение: "))
-    c = acos(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def asi():
-    a = float(input("Первое значение: "))
-    c = asin(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def at():
-    a = float(input("Первое значение: "))
-    c = atan(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def hy():
-    a = float(input("Первый катет: "))
-    b = float(input("Второй катет: "))
-    c = hypot(a, b)
-    print(Fore.GREEN + str(c) + Fore.RED + " СМ")
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def co():
-    a = float(input("Первое значение: "))
-    c = cosh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def sin():
-    a = float(input("Первое значение: "))
-    c = sinh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def tan():
-    a = float(input("Первое значение: "))
-    c = tanh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def aco():
-    a = float(input("Первое значение: "))
-    c = acosh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def asinhh():
-    a = float(input("Первое значение: "))
-    c = asinh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
-def ata():
-    a = float(input("Первое значение: "))
-    c = atanh(a)
-    print(Fore.GREEN + str(c))
-    input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
 
 while True:
   try:
@@ -179,71 +36,159 @@ while True:
     print(Fore.YELLOW + "[15] " + Fore.WHITE + " Нахождение логарифма по числу 10")
     print(Fore.YELLOW + "[16] " + Fore.WHITE + " Нахождение логарифма по числу 2")
     print(Fore.YELLOW + "[17] " + Fore.WHITE + " Нахождение квадратного корня от числа")
-    print(Fore.YELLOW + "[18] " + Fore.WHITE + " Нахождения арккосинус числа")
-    print(Fore.YELLOW + "[19] " + Fore.WHITE + " Вычисление гипотенузы треугольника с катетами")
-    print(Fore.YELLOW + "[20] " + Fore.WHITE + " Гиперболический косинус")
-    print(Fore.YELLOW + "[21] " + Fore.WHITE + " Гиперболический синус")
-    print(Fore.YELLOW + "[22] " + Fore.WHITE + " Гиперболический тангенс")
-    print(Fore.YELLOW + "[23] " + Fore.WHITE + " Обратный гиперболический косинус")
-    print(Fore.YELLOW + "[24] " + Fore.WHITE + " Обратный гиперболический синус")
-    print(Fore.YELLOW + "[25] " + Fore.WHITE + " Обратный гиперболический тангенс")
-    print(Fore.YELLOW + "[26] " + Fore.WHITE + " Число ПИ")
+    print(Fore.YELLOW + "[18] " + Fore.WHITE + " Нахождения арккосинус")
+    print(Fore.YELLOW + "[19] " + Fore.WHITE + " Вычисление арксинусa ")
+    print(Fore.YELLOW + "[20] " + Fore.WHITE + " Вычисление гипотенузы треугольника с катетами")
+    print(Fore.YELLOW + "[21] " + Fore.WHITE + " Гиперболический косинус")
+    print(Fore.YELLOW + "[22] " + Fore.WHITE + " Гиперболический синус")
+    print(Fore.YELLOW + "[23] " + Fore.WHITE + " Гиперболический тангенс")
+    print(Fore.YELLOW + "[24] " + Fore.WHITE + " Обратный гиперболический косинус")
+    print(Fore.YELLOW + "[25] " + Fore.WHITE + " Обратный гиперболический синус")
+    print(Fore.YELLOW + "[26] " + Fore.WHITE + " Обратный гиперболический тангенс")
+    print(Fore.YELLOW + "[27] " + Fore.WHITE + " Число ПИ")
     print("\n")
     print(Fore.YELLOW + "[00] " + Fore.WHITE + " Выход из приложения")
 
     enter = int(input("=> "))
 
     if enter == 1:
-        plus()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a + b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 2:
-        minus()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a - b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 3:
-        umnoj()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a * b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 4:
-        delen()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a / b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 5:
-        delen_modul()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a // b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 6:
-        stepen()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        print(Fore.CYAN + "Будет равно: " + Fore.GREEN + str(a ** b))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 7:
-        perimetr_p()
+        a = float(input("Первая сторона: "))
+        b = float(input("Вторая сторона: "))
+        print(Fore.GREEN + str(2*(a + b)) + Fore.RED +" СМ²")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 8:
-        perimetr_t()
+        a = float(input("Первая сторона: "))
+        b = float(input("Вторая сторона: "))
+        c = float(input("Третья сторона: "))
+        print(Fore.GREEN + str(a + b + c) + Fore.RED +" СМ²")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 9:
-        ploshad_p()
+        a = float(input("Первая сторона: "))
+        b = float(input("Вторая сторона: "))
+        print(Fore.GREEN + str(a * b) + Fore.RED +" СМ³")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 10:
-        ploshad_k()
+        a = float(input("Первая сторона: "))
+        print(Fore.GREEN + str(a ** 2) + Fore.RED +" СМ³")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 11:
-        ploshad_trop()
+        a = float(input("Первая сторона: "))
+        b = float(input("Вторая сторона: "))
+        h = float(input("Высота тропеции: "))
+        print(Fore.GREEN + str(0.5 * h * (a + b)) + Fore.RED +" СМ³")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 12:
-        fact()
+        a = int(input("Первое значение: "))
+        b = factorial(a)
+        c = int(b)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 13:
-        fm()
+        a = float(input("Первое значение: "))
+        b = float(input("Второе значение: "))
+        c = fmod(a, b)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 14:
-        xp()
+        a = float(input("Первое значение: "))
+        c = frexp(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 15:
-        lg10()
+        a = float(input("Первое значение: "))
+        c = log10(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 16:
-        lg2()
+        a = float(input("Первое значение: "))
+        c = log2(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 17:
-        koren()
+        a = float(input("Первое значение: "))
+        c = sqrt(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 18:
-        af()
+        a = float(input("Первое значение: "))
+        b = acos(a)
+        c = degrees(b)
+        print(Fore.GREEN + str(c) + Fore.WHITE + " Градусов")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 19:
-        hy()
+        a = float(input("Первое значение: "))
+        b = asin(a)
+        c = degrees(b)
+        print(Fore.GREEN + str(c) + Fore.WHITE + " Градусов")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 20:
-        co()
+        a = float(input("Первый катет: "))
+        b = float(input("Второй катет: "))
+        c = hypot(a, b)
+        print(Fore.GREEN + str(c) + Fore.RED + " СМ")
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 21:
-        sin()
+        a = float(input("Первое значение: "))
+        c = cosh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 22:
-        tan()
+        a = float(input("Первое значение: "))
+        c = sinh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 23:
-        aco()
+        a = float(input("Первое значение: "))
+        c = tanh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 24:
-        asinhh()
+        a = float(input("Первое значение: "))
+        c = acosh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 25:
-        ata()
+        a = float(input("Первое значение: "))
+        c = asinh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
     elif enter == 26:
+        a = float(input("Первое значение: "))
+        c = atanh(a)
+        print(Fore.GREEN + str(c))
+        input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
+    
+    elif enter == 27:
         pi = pi
         print(Fore.GREEN + str(pi))
         input(Fore.WHITE + "Нажмите " + Fore.YELLOW + " Enter " + Fore.WHITE + " для продолжения")
